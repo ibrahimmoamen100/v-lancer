@@ -1,26 +1,12 @@
 import React from "react";
 import { BiArrowBack } from "react-icons/bi";
-import { GrFormUp } from "react-icons/gr";
-import { filesItem, ListItem, summaryItem } from "@/lib/type"; // Import the type
+import { filesItem, ListItem, summaryItem, phasesItem } from "@/lib/type"; // Import the type
 
-import Image from "next/image";
 import { BiRocket } from "react-icons/bi";
-import { Bs1SquareFill, BsCheck2, BsFileEarmark } from "react-icons/bs";
-import {
-  BsCheck2Circle,
-  BsChatRightText,
-  BsThreeDotsVertical,
-} from "react-icons/bs";
+import { BsCheck2 } from "react-icons/bs";
+import { BsCheck2Circle } from "react-icons/bs";
 import { FcLeave } from "react-icons/fc";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Separator } from "@/components/ui/separator";
-import { CheckCheckIcon } from "lucide-react";
 import Link from "next/link";
 import ContractTracker from "@/components/contract-tracker";
 import ContractDelivery from "@/components/contract-delivery";
@@ -117,7 +103,7 @@ const contactSummary: summaryItem[] = [
   { id: 7, name: "Starting Date", desc: "09-Sep-2023 10:00 AM" },
   { id: 8, name: "Delivery Date", desc: "09-Sep-2023 10:00 AM" },
 ];
-const contactPhases = [
+const contactPhases: phasesItem[] = [
   { id: 1, icon: <BsCheck2 />, desc: "Contract Started", line: true },
   {
     id: 2,

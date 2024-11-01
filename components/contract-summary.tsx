@@ -6,10 +6,11 @@ import {
   AccordionTrigger,
 } from "./ui/accordion";
 import { BsFileEarmark } from "react-icons/bs";
-import { contactSummary } from "@/lib/type";
+
+import { summaryItem } from "@/lib/type";
 
 type ContractSummaryProps = {
-  contactSummary: contactSummary[];
+  contactSummary: summaryItem[];
 };
 
 function ContractSummary({ contactSummary }: ContractSummaryProps) {

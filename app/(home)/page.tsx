@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -9,7 +8,6 @@ export default function Home() {
         href={"/service"}
         className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2"
       >
-        {" "}
         Service
       </Link>
     </div>

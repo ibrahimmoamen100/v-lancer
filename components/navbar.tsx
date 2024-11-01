@@ -3,8 +3,6 @@ import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
 import Link from "next/link";
 
-type Props = {};
-
 let listIcons = [
   {
     icon: <BsSearch />,
@@ -46,7 +44,7 @@ let listIcons = [
   },
 ];
 
-function Navbar({}: Props) {
+function Navbar() {
   return (
     <div className="flex justify-between items-center flex-row px-4 py-1 border-b border-outline bg-[#f5f5f5]">
       <Link className="logo " href="/">

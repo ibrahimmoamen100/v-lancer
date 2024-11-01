@@ -6,9 +6,7 @@ import {
   AccordionContent,
 } from "./ui/accordion";
 
-type Props = {};
-
-function ContractAction({}: Props) {
+function ContractAction() {
   return (
     <Accordion type="single" collapsible defaultValue="item-1">
       <AccordionItem value="item-1" className="w-full">
