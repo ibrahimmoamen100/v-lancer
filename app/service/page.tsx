@@ -130,13 +130,13 @@ function ServicePage() {
         </div>
         <div className="h-[2px] w-full bg-gradient-to-r from-secondary to-primary"></div>
       </div>
-      <div className="grid grid-cols-12  gap-4 h-auto justify-center items-start">
-        <div className="contact-tracker bg-white h-auto rounded-2xl w-full border border-outline flex flex-col gap-4 p-5 col-span-8">
+      <div className="grid grid-cols-12 grid-rows-1  gap-4 h-auto justify-center items-start">
+        <div className="contact-tracker bg-white h-auto rounded-2xl w-full border border-outline flex flex-col gap-4 p-5 col-span-12  lg:col-span-8">
           <ContractTracker lists={lists} />
 
           <ContractDelivery files={files} />
         </div>
-        <div className="contract-summary flex flex-col bg-white h-auto rounded-2xl w-full border border-outline p-5 col-span-4">
+        <div className="contract-summary flex flex-col bg-white h-auto rounded-2xl w-full border border-outline p-5  col-span-12 lg:col-span-4">
           <ContractSummary contactSummary={contactSummary} />
 
           <ContractAction />

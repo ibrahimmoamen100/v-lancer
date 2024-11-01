@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsSearch } from "react-icons/bs";
 import Link from "next/link";
 
-let listIcons = [
+const listIcons = [
   {
     icon: <BsSearch />,
     title: "Home",
